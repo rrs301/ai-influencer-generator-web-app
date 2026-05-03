@@ -5,11 +5,11 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-ocean-deep: #001219;
+  --color-ocean-mid: #005f73;
+  --color-ocean-light: #94d2bd;
+  --color-accent-coral: #ee9b00;
 }
 
 @media (prefers-color-scheme: dark) {
