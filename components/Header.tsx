@@ -29,6 +29,7 @@ export const Header = () => {
 
   const handleSignOut = async () => {
     await supabase.auth.signOut();
+    router.push("/");
     router.refresh();
   };
 
