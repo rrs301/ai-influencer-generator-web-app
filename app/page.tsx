@@ -1,9 +1,17 @@
-import Image from "next/image";
+import { Header } from "../components/Header";
+import { Hero } from "../components/Hero";
+import { Features } from "../components/Features";
+import { Pricing } from "../components/Pricing";
+import { Footer } from "../components/Footer";
 
 export default function Home() {
   return (
-    <div>
-      <h2>Hello Word!!!</h2>
-    </div>
+    <main className="min-h-screen">
+      <Header />
+      <Hero />
+      <Features />
+      <Pricing />
+      <Footer />
+    </main>
   );
 }
