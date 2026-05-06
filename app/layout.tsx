@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -7,9 +7,14 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-outfit",
+});
+
 export const metadata: Metadata = {
-  title: "AI Influencer Generator",
-  description: "Generate AI Influencer using your photos",
+  title: "InfluencerAI | AI Influencer Generator & Scheduler",
+  description: "The all-in-one platform to generate AI influencers, create viral content, and schedule posts automatically.",
 };
 
 export default function RootLayout({
@@ -18,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-ocean-deep text-white font-sans">
+    <html lang="en" className={`${inter.variable} ${outfit.variable} scroll-smooth`}>
+      <body className="antialiased">
         {children}
       </body>
     </html>
